@@ -1,13 +1,13 @@
 import sys
 from Game import Game
- 
+#test = Menu()
 class Menu:
     def __init__(self):
-        self.mainMenu()
+        self.Menu()
       
 
       
-    def mainMenu(self):
+    def Menu(self):
     #intro and menu
         print("Welcome to Rock, Paper, Scissors!\n")
         print("MENU")
@@ -22,7 +22,7 @@ class Menu:
         if choice == "1":
             self.rules()
         elif choice == "2":
-            self.game = Game()
+            self.weaponMenu()
         else:
             sys.exit(0)
          
@@ -31,7 +31,7 @@ class Menu:
         print("RULES")
         print("Paper Covers Rock, Rock Smashes Scissors, Scissors Cuts Paper\n")
 
-        self.Menu()
+        Menu()
  
     def weaponMenu(self):
         print("Choose your weapon!")
@@ -39,6 +39,9 @@ class Menu:
         print("(2) Paper")
         print("(3) Scissors")
         print("(4) Main Menu")
+        player1 = int(input("Player 1: Enter your choice."))
+        player2 = int(input("Player 2: Enter your choice."))
+        
 
     def endProgram(self):
      
@@ -47,5 +50,4 @@ class Menu:
             self.Menu()
         else:
             quit()
- 
-    Menu()
+test = Menu()
