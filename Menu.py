@@ -78,4 +78,4 @@ class Menu:
             if action:
                 action()
             else:
-                print("{0} is not a valid option, Please try again".format(option))
+                print("{0} is not a valid option, Please try again".format(option)) 

@@ -56,7 +56,7 @@ class Game:
   def check(self, player1, player2):
     if player1 != "rock" and player1 != "paper" and player1 != "scissors":
       print("You did not enter rock, paper or scissors. Please try again.\n")
-      return
+      return 
   
   def showResults(self):
     for x in self.results:
