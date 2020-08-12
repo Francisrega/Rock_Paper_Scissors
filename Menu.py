@@ -1,9 +1,9 @@
 import sys
-#from Game import Game
+from Game import Game
  
 class Menu:
     def __init__(self):
-        Menu()
+        self.mainMenu()
       
 
       
